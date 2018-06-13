@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_header_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+<!--        <TextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_height="wrap_content"
+        android:text="@string/label_url" />
+
+        <EditText
+        android:id="@+id/url"
+        android:text="@string/default_test_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_toobar_color"/>
+
+        <EditText
+        android:id="@+id/custom_toolbar_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/default_toolbar_color"
+        android:text="@string/default_toolbar_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_toobar_secondary_color"/>
+
+        <EditText
+        android:id="@+id/custom_toolbar_secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/default_toolbar_color"
+        android:text="@string/default_toolbar_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_add_action_button"/>
+
+        <CheckBox
+        android:id="@+id/custom_show_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_add_menus"/>
+
+        <CheckBox
+        android:id="@+id/custom_add_menus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_add_default_share"/>
+
+        <CheckBox
+        android:id="@+id/add_default_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_add_toolbar_item"/>
+
+        <CheckBox
+        android:id="@+id/add_toolbar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_show_title"/>
+
+        <CheckBox
+        android:id="@+id/show_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_custom_back_button"/>
+
+        <CheckBox
+        android:id="@+id/custom_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/view_vertical_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="@string/label_auto_hide_appbar"/>
+
+        <CheckBox
+        android:id="@+id/auto_hide_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/timeback" />-->
+
+
+        <Button
+            android:id="@+id/start_custom_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/play1"
+            android:freezesText="false"
+            android:text="@string/labelstart"
+            android:textColor="@color/browser_actions_title_color"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:typeface="normal" />
+
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/labeldescribe"
+            android:textColor="#796363"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:reflectionColor="#e6b13f">
+        </com.romainpiel.shimmer.ShimmerTextView>
+
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="258dp"
+            android:layout_height="246dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logopwr"
+            android:contentDescription="TODO" />
+
+        <!--<Button-->
+            <!--android:id="@+id/start_describe"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="68dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@android:dimen/notification_large_icon_height"-->
+            <!--android:freezesText="false"-->
+            <!--android:text="@string/labeldescribe"-->
+            <!--android:textColor="@color/browser_actions_title_color"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:theme="@style/MyButton"-->
+            <!--android:typeface="sans" />-->
+    </LinearLayout>
+</ScrollView>
